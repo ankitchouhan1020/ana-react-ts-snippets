@@ -1,61 +1,49 @@
 {
   "React Class Component": {
-    "prefix": "trc",
+    "prefix": "typeclass",
     "body": [
-      "type $1Props = {",
-      "  $2: $3;",
+      "import React from 'react';",
+      "",
+      "type $2Props = {",
+      "  $3: $4;",
       "};",
       "",
-      "type $4State = {",
-      "  $5: $6;",
+      "type $5State = {",
+      "  $6: $7;",
       "};",
       "",
-      "class App extends React.Component<$1Props,$4State> {",
-      "  state:$4State = {",
-      "    $5: 0,",
+      "class $1 extends React.Component<$1Props,$4State> {",
+      "  state:$5State = {",
+      "    $6: $8,",
       "  };",
       "  render() {",
       "    return (",
       "      <div>",
-      "        {this.props.$2} {this.state.$5}",
+      "        {this.props.$3} {this.state.$6}",
       "      </div>",
       "    );",
       "  }",
-      "}"
+      "}",
+      "",
+      "export default $1;"
     ],
     "description": "create react class components"
   },
   "React Functional Component": {
-    "prefix": "trfc",
+    "prefix": "typefunc",
     "body": [
-      "export type $1Props = { $2: $3 }",
+      "import React from 'react';",
       "",
-      "export const $1: React.FC<$1Props> = ({ $2 }) => {",
-      "    console.log({ $2 })",
-      "    return (",
-      "        $0",
-      "    )",
+      "type $2Props = {",
+      "  $3: $4;",
       "};",
+      "",
+      "export const $1 = ($2Props) => {",
+      "    return null;",
+      "}",
       "",
       "export default $1;"
     ],
     "description": "Create a React Functional Component"
-  },
-  "React Hooks Component": {
-    "prefix": "trhc",
-    "body": [
-      "export type $1Props = { $2: $3 }",
-      "export const $1: React.FC<$1Props> = ({ $2 }) => {",
-      "    console.log({ $2 })",
-      "    const [${4}, set${4/(.*)/${4:/capitalize}/}] = React.useState($5);",
-      "    React.useEffect(() => {}, [])",
-      "    return (",
-      "        ${0}",
-      "    )",
-      "};",
-      "",
-      "export default $1;"
-    ],
-    "description": "Create a React Hooks Component."
   }
 }
