@@ -1,0 +1,43 @@
+{
+  "name": "ana-react-ts-snippets",
+  "version": "1.0.0",
+  "description": "Code snippets for modern react in typescript.",
+  "icon": "images/react-logo.png",
+  "galleryBanner": {
+    "theme": "light"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitchouhan1020/ana-react-ts-snippets.git"
+  },
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "keywords": [
+    "react",
+    "ts",
+    "typescript",
+    "snippets"
+  ],
+  "author": "Ankit Chouhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ankitchouhan1020/ana-react-ts-snippets/issues"
+  },
+  "homepage": "https://github.com/ankitchouhan1020/ana-react-ts-snippets#readme",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
